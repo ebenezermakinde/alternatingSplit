@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alternating Split</title>
+  <!-- External css file -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <header>
+        <h1>Alternating Split</h1>
+        <p>Alternating split is an app that takes every 2nd char from a string, then the other chars,that are not every 2nd char, and concat them as new string. The split is performed over
+                a specified amount of times.</p>
+    </header>
+    <section>
+        <ol>
+          <li> n=1 -> "hsi etTi sats!"</li>
+          <li> n=2 -> "hsi etTi sats!"-> "s eT ashi tist!"</li>
+        </ol>
+        <div class="form">
+            <label for="string">Enter a string</label>
+            <input type="text" name="string" id="string" placeholder="Enter a string">
+            <small class="errorStyle" id="string_error"></small>
+        </div>
+        <div class="form">
+            <label for="number">Enter the number of <i>n</i> splits</label>
+            <input type="number" name="number" id="number" placeholder="Enter any positive integer">
+            <small class="errorStyle" id="number_error"></small>
+
+            <button id="press">Execute</button>
+        </div>
+        <h3>Encryption:</h3>
+        <div id="result"></div>  
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

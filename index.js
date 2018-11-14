@@ -6,7 +6,7 @@ const string_error = document.getElementById('string_error');
 const number_error = document.getElementById('number_error');
 const result = document.getElementById('result');
 
-//Event tiggered by the split button
+//Event triggered by the split button
 press.addEventListener('click', () => {
     let string = str.value.trim(); //Remove the white spaces from the string.
     let number = Math.floor(num.value); //Handles floating values.
